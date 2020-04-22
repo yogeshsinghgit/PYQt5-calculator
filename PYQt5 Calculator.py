@@ -50,6 +50,8 @@ class Example(QWidget):
         elif button_text.text() == 'Bck':
             self.current = self.current[:-1]
             self.display.setText(self.current)
+        elif button_text.text() == 'Close':
+            self.close()
         elif button_text.text() == '=':
             try:
                 if u"\N{DIVISION SIGN}" in self.current:
